@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notely.AI</title>
+    <style>
+      body {
+        background-color: rgb(252, 250, 252);
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+       #noteText {
+        background-color:  rgb(29,128,159);
+        width: 80%;
+        margin: 0 auto;
+        min-height: 300px;
+        border-radius: 0%;
+      }
+      h2 {
+        text-shadow: 10ch;
+        color: rgb(margin: 100px auto;);
+        margin: 40px 0;
+      }
+      input[type='submit'] {
+        background-color:  rgb(29,128,159);
+       width: 10%;
+       font-size: 0.8em;
+       margin: 30px auto;
+       display: block;
+      }
+      #fileUpload{
+        margin-top: -20px;
+        margin: 100px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container px-4 px-lg-5 text-center">
+        <h1 class="mb-1">Noteley.AI</h1>
+    </div>
+    <h2>Upload pictures of your textbook, notes, diagrams, or copy and paste text
+        Topic To Notes 
+    </h2>
+
+    <form method="" action="imagetotext">
+        <label for="fileUpload">Select a file:</label>
+        <input type="file" id="fileUpload" name="fileUpload" download>
+        <input type="submit"/>
+    </form>
+
+    
+    <form method="" action="output">
+        <textarea id="noteText" name="text"></textarea><br>
+        <input type="submit"/>
+    </form>
+    
+  </body>
+</html>

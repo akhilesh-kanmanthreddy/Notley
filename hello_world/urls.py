@@ -20,6 +20,13 @@ from hello_world.core import views as core_views
 
 urlpatterns = [
     path("", core_views.index),
+    path("topictonotes.html", core_views.topictonotes, name="topictonotes"),
+    path("expandontopic.html", core_views.expandontopic, name="expandontopic"),
+    path("topictoflashcards.html", core_views.topictoflashcards, name="topictoflashcards"),
+    path("topictopracticetest.html", core_views.topictopracticetest, name="topictopracticetest"),
+    #path('output.html', core_views.output, name='output'),
+    path('output',core_views.output, name='output'),
+    path('imagetotext',core_views.imagetotext, name='imagetotext'),
     path("admin/", admin.site.urls),
     path("__reload__/", include("django_browser_reload.urls")),
 ]
